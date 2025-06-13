@@ -4,7 +4,7 @@
   height: auto;
   margin-right: var(--size-xxs);
   direction: ltr;
-  font-family: var(--font-icons);
+  font-family: material-icons;
   font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
