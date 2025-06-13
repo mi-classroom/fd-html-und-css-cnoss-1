@@ -1,0 +1,30 @@
+body {
+  font-family: ibm-plex-sans, sans-serif;
+  padding: 1rem;
+  color: #000;
+  background-color: #fff;
+  line-height: 140%;
+  font-weight: 300;
+}
+
+header,
+nav {
+  display: none;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+dd,
+li,
+figure{
+   margin-bottom: 1rem;
+}
+

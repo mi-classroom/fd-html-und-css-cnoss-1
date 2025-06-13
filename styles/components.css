@@ -1,0 +1,33 @@
+
+/* Infobox
+############################################################################# */
+
+.infobox {
+  background-color: var(--background-color);
+  border-left: solid 0.2rem #d4af37; /* Gold border */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  
+  h3:first-child{
+    font-weight: bold;
+  }
+}
+
+/* Image with Caption
+############################################################################# */
+
+.image-with-caption{
+
+  img{
+    width: 100%;
+    display: block;
+  }
+
+  figcaption {
+    background-color: var(--background-color);
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 130%;
+  }
+}
+
