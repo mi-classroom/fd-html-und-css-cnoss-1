@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: ibm-plex-sans, sans-serif;
   padding: 1rem;
@@ -7,18 +11,23 @@ body {
   font-weight: 300;
 }
 
-header,
-nav {
+header {
   display: none;
 }
 
 h1 {
   font-size: 2rem;
   font-weight: 400;
+  margin-bottom: var(--spacing-3xl);
+  line-height: var(--line-height-tight);
+}
+
+h2{
+  font-size: var(--font-size-xl);
+  margin-top: var(--spacing-3xl);
 }
 
 p,
-h1,
 h2,
 h3,
 h4,
@@ -28,3 +37,10 @@ figure{
    margin-bottom: 1rem;
 }
 
+p, dd, li, figcaption{
+  hyphens: auto;;
+}
+
+strong{
+  font-weight: var(--font-weight-bold);
+}
