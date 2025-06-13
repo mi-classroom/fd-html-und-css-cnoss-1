@@ -61,20 +61,3 @@
   font-size: var(--size-m);
 }
 
-[class^="icofont-"],
-[class^="material-"],
-[class*=" icofont-"],
-.icon {
-  color: var(--icon-color);
-
-  &.is-large {
-    margin-top: var(--size-l);
-    margin-bottom: var(--size-xl);
-    font-size: var(--size-l);
-  }
-
-  &.is-inline{
-    margin-right: 0.25em;
-    color: var(--color-darken-strong);
-  }
-}
