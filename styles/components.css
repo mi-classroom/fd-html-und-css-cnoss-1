@@ -2,8 +2,8 @@
 ############################################################################# */
 
 .infobox {
-  background-color: var(--color-background);
-  border-left: solid var(--border-width-l) var(--color-accent);
+  background-color: var(--color-background-200);
+  border-left: solid var(--border-width-l) var(--color-primary-default);
   /* Gold border */
   padding: var(--spacing-m);
   margin-bottom: var(--spacing-m);
@@ -24,9 +24,9 @@
   }
 
   figcaption {
-    background-color: var(--color-background);
+    background-color: var(--color-background-200);
     padding: var(--spacing-m);
-    font-size: 0.9rem;
+    font-size: var(--font-size-s);
     line-height: var(--line-height-tight);
   }
 }
@@ -49,18 +49,18 @@
       padding: var(--spacing-2xs);
 
       margin: 0;
-      border-left: var(--border-width-m) solid var(--color-border);
+      border-left: var(--border-width-m) solid var(--color-primary-300);
       padding-left: var(--spacing-s);
 
       a {
-        color: var(--color-text);
+        color: var(--color-text-default);
         text-decoration: none;
         opacity: 0.6;
 
       }
 
       &:hover {
-        border-left-color: var(--color-accent);
+        border-left-color: var(--color-primary-default);
 
         a {
           opacity: 1;
@@ -68,3 +68,20 @@
       }
     }
   }
+}
+
+/* Buttons
+  ############################################################################# */
+
+.button {
+  background-color: var(--color-primary-default);
+  padding: 0 var(--spacing-xs);
+  border: none;
+  color: #fff;
+  font-size: var(--font-size-l);
+  height: 38px;
+
+  &:active {
+    background-color: var(--color-primary-400);
+  }
+}
