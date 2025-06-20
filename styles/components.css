@@ -38,7 +38,6 @@
 
   h2 {
     font-size: var(--font-size-xl);
-
   }
 
   ul {
@@ -49,7 +48,7 @@
       padding: var(--spacing-2xs);
 
       margin: 0;
-      border-left: var(--border-width-m) solid var(--color-primary-300);
+      border-left: var(--border-width-m) solid var( --color-background-200);
       padding-left: var(--spacing-s);
 
       a {

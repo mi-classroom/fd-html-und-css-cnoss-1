@@ -16,11 +16,13 @@ h1 {
   font-weight: var(--font-weight-regular);
   margin-bottom: var(--spacing-3xl);
   line-height: var(--line-height-tight);
+  text-wrap: balance;
 }
 
 h2{
   font-size: var(--font-size-xl);
   margin-top: var(--spacing-3xl);
+  margin-bottom: var(--spacing-l);
 }
 
 img{
@@ -29,7 +31,6 @@ img{
 }
 
 p,
-h2,
 h3,
 h4,
 dd,

@@ -1,8 +1,12 @@
 body:has(.header-overlay.is-active) {
   overflow: hidden;
+  
 }
 
 .header {
+
+  margin-bottom: var(--spacing-l);
+
   .header-container {
     display: flex;
     justify-content: space-between;
@@ -34,8 +38,11 @@ body:has(.header-overlay.is-active) {
     right: 0;
     bottom: 0;
     position: fixed;
+    overflow-y: auto;
     z-index: 1000;
     background-color: var(--color-background-default);
+    padding-top: var(--spacing-2xl);
+    padding-bottom: var(--spacing-2xl);
 
     &.is-active {
       display: flex;
@@ -77,8 +84,11 @@ body:has(.header-overlay.is-active) {
       margin-top: var(--spacing-l);
     }
 
-    .header-nav-list > li:first-child {
-      margin-top: 0;
+    .header-nav-list{
+
+      & > li:first-child {
+        margin-top: 0;
+      }
     }
 
     a {
