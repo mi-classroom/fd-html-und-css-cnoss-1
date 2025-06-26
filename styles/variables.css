@@ -6,20 +6,24 @@
 :root {
   /* font family */
   --font-family-primary: 'IBM Plex Sans', sans-serif;
+
+  --base-font-size: 1rem;
+  --fluid-base-font-size: clamp(1rem, 4vw, 10rem);
   
   /* font sizes */
-  --font-size-s: 0.75rem;    /* 12px */
-  --font-size-m: 1rem;       /* 16px - Basis */
-  --font-size-l: 1.25rem;    /* 20px */
-  --font-size-xl: 1.5rem;    /* 24 */
-  --font-size-2xl: 2rem;     /* 32px */
-  --font-size-3xl: 3.25rem;  /* 52px */
+  --font-size-s: calc(var(--base-font-size) * 0.75);
+  --font-size-m: calc(var(--base-font-size) * 1);
+  --font-size-l: calc(var(--base-font-size) * 1.25);
+  --font-size-xl: calc(var(--base-font-size) * 1.5);
+  --font-size-2xl: calc(var(--base-font-size) * 1.75);
+  --font-size-3xl: calc(var(--base-font-size) * 2);
 
   
   
   /* font weights */
   --font-weight-light: 300;
   --font-weight-regular: 400;
+  --font-weight-medium: 500;
   --font-weight-bold: 700;
   
   /* line heights */
@@ -28,6 +32,13 @@
   --line-height-loose: 140%;
   
   /* colors */
+
+  --color-dark: hsl(0, 0%, 20%);
+  --color-darker: hsl(0, 0%, 10%);
+  --color-darkest: hsl(0, 0%, 0%);
+  --color-light: hsl(0, 0%, 70%);  
+  --color-lighter: hsl(0, 0%, 85%);  
+  --color-lightest: hsl(0, 0%, 100%);  
   --color-primary-300: #FFD37E;
   --color-primary-400: #FFC450;
   --color-primary-default: #FEB701;
@@ -35,22 +46,29 @@
 
   --color-background-default: #FFFFFF;
   --color-background-200: #F2F2F2;
-  --color-text-default: #000000;
+  --color-text-default: var(--color-darker);
 
   
   /* spaces */
-  --spacing-3xs: 0.125rem; /* 2px */
-  --spacing-2xs: 0.25rem;  /* 4px */
-  --spacing-xs: 0.5rem;    /* 8px */
-  --spacing-s: 0.75rem;    /* 12px */
-  --spacing-m: 1rem;       /* 16px */
-  --spacing-l: 1.5rem;     /* 24px */
-  --spacing-xl: 2rem;      /* 32px */
-  --spacing-2xl: 2.5rem;   /* 40px */
-  --spacing-3xl: 3rem;     /* 48px */
-  --spacing-4xl: 4rem;      /* 64px */
-  --spacing-5xl:  5.75rem;  /* 92px */
-  --spacing-6xl: 7.5rem;    /* 120px */
+  --spacing-3xs: calc(var(--base-font-size) * 0.125);
+  --spacing-2xs: calc(var(--base-font-size) * 0.25);
+  --spacing-xs: calc(var(--base-font-size) * 0.5);
+  --spacing-s: calc(var(--base-font-size) * 0.7);
+  --spacing-m: calc(var(--base-font-size) * 1);
+  --spacing-l: calc(var(--base-font-size) * 1.5);
+  --spacing-xl: calc(var(--base-font-size) * 2);
+  --spacing-2xl: calc(var(--base-font-size) * 2.5);
+  --spacing-3xl: calc(var(--base-font-size) * 3);
+  --spacing-4xl: calc(var(--base-font-size) * 4);
+  --spacing-5xl:  calc(var(--base-font-size) * 5.75);
+  --spacing-6xl: calc(var(--base-font-size) * 7.5);
+  
+  /* fluid spaces */
+  --fluid-space-xs: calc(var(--fluid-base-font-size) * 0.5);
+  --fluid-space-s: calc(var(--fluid-base-font-size) * 0.7);
+  --fluid-space-m: var(--fluid-base-font-size);
+  --fluid-space-l: calc(var(--fluid-base-font-size) * 1.5);
+  --fluid-space-xl: calc(var(--fluid-base-font-size) * 2);
 
   /* border widths  */
   --border-width-s: 1px;
@@ -63,9 +81,7 @@
   --transition-normal: 300ms;
   --transition-slow: 500ms;
   
-  /* breakpoints */
-  --break-point-xs: 576px;
-  --break-point-s: 768px;
-  --break-point-m: 1024px;
-  --breapoint-l: 1200px;
+  /* max width for content */
+  --max-width-content: 40rem;
+  --logo-width: 5rem;
 } 

@@ -4,11 +4,15 @@ html {
 
 body {
   font-family: var(--font-family-primary);
-  padding: var(--spacing-m);
   color: var(--color-text-default);
   background-color: var(--color-background-default);
   line-height: var(--line-height-loose);
   font-weight: var(--font-weight-light);
+  overflow: auto;
+}
+
+header, main, footer{
+  padding: var(--fluid-space-m);
 }
 
 h1 {
@@ -17,14 +21,17 @@ h1 {
   margin-bottom: var(--spacing-3xl);
   line-height: var(--line-height-tight);
   text-wrap: balance;
-
-  font-size: clamp(1rem, 3vw, 2rem);
 }
 
 h2 {
   font-size: var(--font-size-xl);
   margin-top: var(--spacing-3xl);
   margin-bottom: var(--spacing-l);
+}
+
+h3{
+  margin-top: var(--spacing-xl);
+  font-weight: var(--font-weight-bold);
 }
 
 img {
@@ -52,34 +59,3 @@ figcaption {
 strong {
   font-weight: var(--font-weight-bold);
 }
-
-@media screen and (min-width: 1700px){
-  main{
-    display: grid;
-    grid-template-columns: 33.3% 1fr;
-    gap: 100px;
-
-  }
-}
-
-
-/*
-@media screen and (min-width: 700px)  {
-  main {
-    display: flex;
-  }
-
-  .toc {
-    width: 33.3%;
-
-    h2 {
-      margin-top: 0;
-    }
-  }
-
-  .main-content {
-    width: 66.6%;
-  }
-}
-
-*/

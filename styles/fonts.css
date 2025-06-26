@@ -1,6 +1,7 @@
 @font-face {
   font-family: ibm-plex-sans;
   src:url("/fonts/IBM_Plex_Sans-2/IBMPlexSans-VariableFont_wdth\,wght.ttf") format("truetype");
+  font-weight: 100 700;
   font-style: normal;
 }
 
