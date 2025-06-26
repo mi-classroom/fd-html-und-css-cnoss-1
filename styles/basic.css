@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -17,15 +17,17 @@ h1 {
   margin-bottom: var(--spacing-3xl);
   line-height: var(--line-height-tight);
   text-wrap: balance;
+
+  font-size: clamp(1rem, 3vw, 2rem);
 }
 
-h2{
+h2 {
   font-size: var(--font-size-xl);
   margin-top: var(--spacing-3xl);
   margin-bottom: var(--spacing-l);
 }
 
-img{
+img {
   width: 100%;
   display: block;
 }
@@ -35,14 +37,49 @@ h3,
 h4,
 dd,
 li,
-figure{
-   margin-bottom: var(--spacing-m);
+figure {
+  margin-bottom: var(--spacing-m);
 }
 
-p, dd, li, figcaption{
-  hyphens: auto;;
+p,
+dd,
+li,
+figcaption {
+  hyphens: auto;
+  ;
 }
 
-strong{
+strong {
   font-weight: var(--font-weight-bold);
 }
+
+@media screen and (min-width: 1700px){
+  main{
+    display: grid;
+    grid-template-columns: 33.3% 1fr;
+    gap: 100px;
+
+  }
+}
+
+
+/*
+@media screen and (min-width: 700px)  {
+  main {
+    display: flex;
+  }
+
+  .toc {
+    width: 33.3%;
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  .main-content {
+    width: 66.6%;
+  }
+}
+
+*/
