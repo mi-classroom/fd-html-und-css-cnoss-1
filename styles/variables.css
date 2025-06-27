@@ -17,7 +17,8 @@
   --font-size-xl: calc(var(--base-font-size) * 1.5);
   --font-size-2xl: calc(var(--base-font-size) * 1.75);
   --font-size-3xl: calc(var(--base-font-size) * 2);
-
+  --font-size-4xl: calc(var(--base-font-size) * 2.5);
+  --font-size-5xl: calc(var(--base-font-size) * 3);
   
   
   /* font weights */
@@ -83,5 +84,6 @@
   
   /* max width for content */
   --max-width-content: 40rem;
+  --max-width-page: 960px;
   --logo-width: 5rem;
 } 

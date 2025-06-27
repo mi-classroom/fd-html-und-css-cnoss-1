@@ -1,49 +1,54 @@
 /* Menu
 ############################################################################ */
 
-const menuOpenButton = document.querySelector('[data-js-main-menu-open]');
-const menuCloseButton = document.querySelector('[data-js-main-menu-close]');
-const mainMenu = document.querySelector('[data-js-main-menu-target]');
+const initMenu = () => {
 
-menuOpenButton.addEventListener('click', () => {
-  mainMenu.classList.add('is-active');
-});
+  const menuOpenButton = document.querySelector('[data-js-main-menu-open]');
+  const menuCloseButton = document.querySelector('[data-js-main-menu-close]');
+  const mainMenu = document.querySelector('[data-js-main-menu-target]');
 
-menuCloseButton.addEventListener('click', () => {
-  mainMenu.classList.remove('is-active');
-});
+  menuOpenButton.addEventListener('click', () => {
+    mainMenu.classList.add('is-active');
+  });
+
+  menuCloseButton.addEventListener('click', () => {
+    mainMenu.classList.remove('is-active');
+  });
+}
 
 /* On Page Navigation
 ############################################################################ */
 
-const sectionHeadlines = document.querySelectorAll("[data-js-page-content] > section > h2");
-const pageNavigationMenu = document.querySelector('[data-js-page-navigation-menu]');
+const initPageNavigation = () => {
 
-if (pageNavigationMenu) {
-  sectionHeadlines.forEach((headline) => {
-    
-    // const navigationItem = document.createElement('li');
-    // const navigationLink = document.createElement('a');
-    const slug = createSlug(headline.innerText);
+  const sectionHeadlines = document.querySelectorAll("[data-js-page-content] > section > h2");
+  const pageNavigationMenu = document.querySelector('[data-js-page-navigation-menu]');
 
-    // navigationLink.setAttribute('href', `#${slug}`);
-    // headline.parentElement.setAttribute('id', slug); 
-    // navigationLink.innerText = headline.innerText;
-    // navigationItem.appendChild(navigationLink);
-    // pageNavigationMenu.appendChild(navigationItem);
+  if (pageNavigationMenu) {
+    sectionHeadlines.forEach((headline) => {
 
-        headline.parentElement.setAttribute('id', slug);
+      // const navigationItem = document.createElement('li');
+      // const navigationLink = document.createElement('a');
+      const slug = createSlug(headline.innerText);
 
-    pageNavigationMenu.innerHTML += `
+      // navigationLink.setAttribute('href', `#${slug}`);
+      // headline.parentElement.setAttribute('id', slug); 
+      // navigationLink.innerText = headline.innerText;
+      // navigationItem.appendChild(navigationLink);
+      // pageNavigationMenu.appendChild(navigationItem);
+
+      headline.parentElement.setAttribute('id', slug);
+
+      pageNavigationMenu.innerHTML += `
       <li>
         <a href="#${slug}" class="page-navigation__link">${headline.innerText}</a>
       </li>
     `;
 
-  });
+    });
 
+  }
 }
-
 
 /* Please create a function that creates a slug from a string. Please without double dashes. Keep german umlauts
 ############################################################################ */
@@ -64,5 +69,17 @@ function createSlug(text) {
     .replace(/--+/g, '-'); // Replace multiple dashes with a single dash
 }
 
-    
 
+
+
+
+
+/* Main
+############################################################################ */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  initMenu();
+  initPageNavigation();
+
+});

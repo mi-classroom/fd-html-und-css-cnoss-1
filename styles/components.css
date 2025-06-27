@@ -119,6 +119,32 @@ figure:has(.infobox) {
   }
 }
 
+.round-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-default);
+  padding: 0 var(--spacing-xs);
+  border: none;
+  color: #fff;
+  font-size: var(--font-size-l);
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  transition: transform  var(--transition-fast) ease-in-out;
+  scale(0.9);
+
+  .icon{
+    margin: 0;
+  }
+
+  &:hover{
+    transform: scale(1);
+  }
+  &:active {
+    background-color: var(--color-primary-400);
+  }
+}
+
 /* vita list
 ############################################################################# */
 

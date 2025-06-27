@@ -25,13 +25,14 @@ h1 {
 
 h2 {
   font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-regular);
   margin-top: var(--spacing-3xl);
   margin-bottom: var(--spacing-l);
 }
 
 h3{
   margin-top: var(--spacing-xl);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-regular);
 }
 
 img {
