@@ -9,3 +9,7 @@
 @import url("/styles/header.css");
 @import url("/styles/layouts.css");
 @import url("/styles/footer.css");
+
+/* Styles for certain pages
+-----------------------------------------------------------------------------*/
+@import url("/styles/home.css");

@@ -27,6 +27,7 @@
   --font-weight-bold: 700;
   
   /* line heights */
+  --line-height-tighter: 100%;
   --line-height-tight: 120%;
   --line-height-normal: 130%;
   --line-height-loose: 140%;
