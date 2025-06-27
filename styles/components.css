@@ -27,9 +27,7 @@ figure:has(.infobox) {
 
     img {
       width: 100%;
-
       object-fit: cover;
-      ;
     }
   }
 }
@@ -38,7 +36,6 @@ figure:has(.infobox) {
 ############################################################################# */
 
 .image-with-caption {
-
   margin-top: var(--fluid-space-m);
   margin-bottom: var(--fluid-space-m);
 
