@@ -3,7 +3,7 @@
   .has-base-grid {
     grid-template-rows: auto;
     display: grid;
-    grid-template-columns: minmax(20ch, 1fr) minmax(20ch, auto);
+    grid-template-columns: minmax(20ch, 1fr) minmax(20ch, calc(var(--max-width-content)));
     gap: var(--fluid-space-m);
     margin-top: var(--spacing-3xl);
 

@@ -82,6 +82,6 @@
   --transition-slow: 500ms;
   
   /* max width for content */
-  --max-width-content: 40rem;
+  --max-width-content: 90ch;;
   --logo-width: 5rem;
 } 
