@@ -12,7 +12,7 @@
   
   /* font sizes */
   --font-size-s: calc(var(--base-font-size) * 0.75);
-  --font-size-m: calc(var(--base-font-size) * 1);
+  --font-size-m: var(--base-font-size);
   --font-size-l: calc(var(--base-font-size) * 1.25);
   --font-size-xl: calc(var(--base-font-size) * 1.5);
   --font-size-2xl: calc(var(--base-font-size) * 1.75);
@@ -28,6 +28,7 @@
   --font-weight-bold: 700;
   
   /* line heights */
+  --line-height-tighter: 100%;
   --line-height-tight: 120%;
   --line-height-normal: 130%;
   --line-height-loose: 140%;
