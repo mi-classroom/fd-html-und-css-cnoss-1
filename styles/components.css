@@ -139,6 +139,7 @@ figure:has(.infobox) {
 
   &:hover{
     transform: scale(1);
+    cursor: pointer;
   }
   &:active {
     background-color: var(--color-primary-400);
