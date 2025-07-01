@@ -1,4 +1,16 @@
 {
+  "name": "Cranach Website Demo",
+  "version": "1.0.0",
+  "description": "Relaunch of the Cranach website with a focus on HTML and CSS.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint styles/**/*.css",
+    "lint:fix": "stylelint styles/**/*.css --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dein Name",
+  "license": "MIT",
   "devDependencies": {
     "stylelint": "^16.21.0",
     "stylelint-config-idiomatic-order": "^10.0.0",
