@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "stylelint styles/**/*.css",
     "lint:fix": "stylelint styles/**/*.css --fix",
-    "dev": "npx browser-sync start --server --files \"**/*.html, **/*.css, **/*.js\"",
+    "dev": "npx browser-sync start --server --files './**/*.html,./**/*.css,./**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

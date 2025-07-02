@@ -2,11 +2,10 @@
 ############################################################################# */
 
 .infobox {
-  background-color: var(--color-background-200);
-  border-left: solid var(--border-width-l) var(--color-primary-default);
-
   padding: var(--spacing-m);
+  border-left: solid var(--border-width-l) var(--color-primary-default);
   margin-bottom: var(--spacing-m);
+  background-color: var(--color-background-200);
 
   h3 {
     margin-top: 0;
@@ -18,7 +17,7 @@
 }
 
 figure:has(.infobox) {
-  @media screen and (min-width: 700px) {
+  @media screen and (width >= 700px) {
     display: flex;
 
     .infobox {
@@ -39,7 +38,7 @@ figure:has(.infobox) {
   margin-top: var(--fluid-space-m);
   margin-bottom: var(--fluid-space-m);
 
-  @media screen and (min-width: 700px) {
+  @media screen and (width >= 700px) {
     height: 100%;
 
     & {
@@ -48,15 +47,15 @@ figure:has(.infobox) {
   }
 
   img {
-    width: 100%;
     display: block;
+    width: 100%;
   }
 
   figcaption {
     padding: var(--spacing-m);
+    background-color: var(--color-background-200);
     font-size: var(--font-size-s);
     line-height: var(--line-height-tight);
-    background-color: var(--color-background-200);
   }
 }
 
@@ -77,15 +76,14 @@ figure:has(.infobox) {
 
     li {
       padding: var(--spacing-2xs);
-
-      margin: 0;
-      border-left: var(--border-width-m) solid var(--color-background-200);
       padding-left: var(--spacing-s);
+      border-left: var(--border-width-m) solid var(--color-background-200);
+      margin: 0;
 
       a {
         color: var(--color-text-default);
-        text-decoration: none;
         opacity: 0.6;
+        text-decoration: none;
 
       }
 
@@ -104,40 +102,50 @@ figure:has(.infobox) {
   ############################################################################# */
 
 .button {
-  background-color: var(--color-primary-default);
-  padding: 0 var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-s);
   border: none;
+  border-radius: var(--radius-s);
+  background-color: var(--color-primary-default);
   color: #fff;
-  font-size: var(--font-size-l);
-  height: 38px;
+  font-size: var(--font-size-m);
+  transition: background-color var(--transition-fast) ease-in-out;
 
-  &:active {
-    background-color: var(--color-primary-400);
+  
+  &:active, &:hover {
+    background-color: var(--color-darkest);
+    cursor: pointer;
   }
+
+  &.is-large{
+    padding: var(--spacing-s) var(--spacing-m);
+  }
+
+
 }
 
 .round-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-primary-default);
   padding: 0 var(--spacing-xs);
   border: none;
-  color: #fff;
-  font-size: var(--font-size-l);
   border-radius: 50%;
   aspect-ratio: 1 / 1;
-  transition: transform  var(--transition-fast) ease-in-out;
+  background-color: var(--color-primary-default);
+  color: #fff;
+  font-size: var(--font-size-l);
   transform: scale(0.9);
+  transition: transform  var(--transition-fast) ease-in-out;
 
   .icon{
     margin: 0;
   }
 
   &:hover{
-    transform: scale(1);
     cursor: pointer;
+    transform: scale(1);
   }
+
   &:active {
     background-color: var(--color-primary-400);
   }
@@ -147,7 +155,6 @@ figure:has(.infobox) {
 ############################################################################# */
 
 .vita-list {
-
   margin-bottom: var(--spacing-2xl);
 
   dt {
@@ -159,7 +166,7 @@ figure:has(.infobox) {
     border-bottom: solid 1px var(--color-light);
   }
 
-  @media (min-width: 600px) {
+  @media (width >= 600px) {
     display: grid;
     grid-template-columns: 16ch 1fr;
 
